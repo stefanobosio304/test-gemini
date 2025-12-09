@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 st.title("🛠️ Gemini API Tester")
 
-# 1. Inserisci la tua chiave qui (o leggila dai secrets se già impostati)
+AIzaSyDpXBhLGHsnvhDwqS78G6JpY9w7vuqvt0A
 api_key = st.text_input("Inserisci la tua API Key di Gemini:", type="password")
 
 if api_key:
@@ -43,4 +43,5 @@ if api_key:
                 st.success("Risposta ricevuta:")
                 st.write(response.text)
             except Exception as e:
+
                 st.error(f"Errore durante la generazione: {e}")
